@@ -27,15 +27,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let connection  : NSURLConnection = NSURLConnection.connectionWithRequest(request, delegate: self);
     }
     
+    func getImage(character:Character, query: NSString) {
+        let url         : NSURL = NSURL(string: "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=\(query)&imgsz=large");
+        let request     : NSURLRequest = NSURLRequest(URL: url);
+        let queue   : NSOperationQueue = NSOperationQueue();
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{(response:NSURLResponse!, responseData:NSData!, error: NSError!) -> Void in
+            
+            let json : NSDictionary = self.parseJSON(responseData);
+            let responseData : NSDictionary = json.objectForKey("responseData") as NSDictionary;
+            let results : NSArray = responseData.objectForKey("results") as NSArray;
+            let firstImage : NSDictionary = results.firstObject as NSDictionary;
+            let firstImageUrl : NSString = firstImage.objectForKey("tbUrl") as NSString;
+            character.imageLink = firstImageUrl;
+            })
+    }
+    
     func parseJSON(inputData: NSData) -> NSDictionary {
-        var error: NSError?
-        var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
+        var error : NSError?
+        var boardsDictionary : NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
         return boardsDictionary
     }
     
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
         let c = self.characters.objectAtIndex(indexPath.row) as Character;
-        println(c.link);
         self.selectedCharacter = c;
         self.performSegueWithIdentifier("DetailSegue", sender: nil);
     }
@@ -53,6 +68,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell;
         
         cell.textLabel.text = item.name;
+
+        let query : NSString = item.name.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding);
+        self.getImage(item, query:query);
         
         return cell;
     }
@@ -60,16 +78,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // url connection
     
     func connection(connection: NSURLConnection!, didReceiveData data: NSData!) {
-        let json : NSDictionary = parseJSON(data);
-        characters = json.objectForKey("items") as NSArray;
-        characters = Character().convert(characters);
+        let host = connection.currentRequest.URL.host;
         
-        self.tableView.reloadData();
+        if (host == "gameofthrones.wikia.com") {
+            let json : NSDictionary = parseJSON(data);
+            characters = json.objectForKey("items") as NSArray;
+            characters = Character().convert(characters);
+            self.tableView.reloadData();
+        } else {
+            
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         if (segue.identifier == "DetailSegue") {
-//            if (segue.destinationViewController.isKindOfClass(WebViewController.class))
             let wvc : WebViewController = segue.destinationViewController as WebViewController;
             wvc.character = self.selectedCharacter;
         }

@@ -61,39 +61,15 @@
         <scene sceneID="6tK-ld-sFJ">
             <objects>
                 <viewController id="hAv-pn-BsM" customClass="WebViewController" customModule="Greenseer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zK5-XX-COU"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jju-S6-rRD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="354-pv-9oN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXt-Wh-UfM">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                </variation>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="qXt-Wh-UfM"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="qXt-Wh-UfM"/>
-                            </mask>
-                        </variation>
-                    </view>
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" id="hMe-S8-bUf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="webView" destination="qXt-Wh-UfM" id="n0n-mo-4hf"/>
+                        <outlet property="imageView" destination="hMe-S8-bUf" id="8uS-Yf-YrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqq-UT-pRe" sceneMemberID="firstResponder"/>

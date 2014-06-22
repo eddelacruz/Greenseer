@@ -7,21 +7,24 @@
 //
 
 import UIKit
+import Foundation
 
 class WebViewController: UIViewController {
     var character : Character = Character();
     
-    @IBOutlet var webView : UIWebView
-
+//    @IBOutlet var webView   : UIWebView
+    @IBOutlet var imageView : UIImageView = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad();
         
         self.navigationController.navigationBar.translucent = false;
         
-        println(self.character.id);
-        
-        let request : NSURLRequest = NSURLRequest(URL: NSURL(string: self.character.link));
-        self.webView.loadRequest(request);
+//        let request : NSURLRequest = NSURLRequest(URL: NSURL(string: self.character.link));
+//        self.webView.loadRequest(request);
+        println(self.character.imageLink);
+        let imageURL : NSURL = NSURL(string: self.character.imageLink);
+        self.imageView.setImageWithURL(imageURL);
         
         self.title = character.name;
     }

@@ -12,6 +12,7 @@ class Character: NSObject {
     var id : NSInteger = 0
     var name : NSString = ""
     var link : NSString = ""
+    var imageLink : NSString = ""
     let domain : NSString = "http://gameofthrones.wikia.com"
     
     class Converter {
