@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5017C6E1956C911001BBD39 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5017C6D1956C911001BBD39 /* ImageHelper.swift */; };
+		E538C638195683BF0022693E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538C637195683BF0022693E /* AppDelegate.swift */; };
+		E538C63B195683BF0022693E /* Greenseer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E538C639195683BF0022693E /* Greenseer.xcdatamodeld */; };
+		E538C63D195683BF0022693E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538C63C195683BF0022693E /* ViewController.swift */; };
+		E538C640195683BF0022693E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E538C63E195683BF0022693E /* Main.storyboard */; };
+		E538C642195683BF0022693E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E538C641195683BF0022693E /* Images.xcassets */; };
+		E538C64E195683BF0022693E /* GreenseerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538C64D195683BF0022693E /* GreenseerTests.swift */; };
+		E555372B1956ADCB00DACB7E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555372A1956ADCB00DACB7E /* WebViewController.swift */; };
+		E55892501956A50D0031E2BE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558924F1956A50D0031E2BE /* Character.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E538C648195683BF0022693E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E538C62A195683BF0022693E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E538C631195683BF0022693E;
+			remoteInfo = Greenseer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5017C6D1956C911001BBD39 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		E538C632195683BF0022693E /* Greenseer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenseer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E538C636195683BF0022693E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E538C637195683BF0022693E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E538C63A195683BF0022693E /* Greenseer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Greenseer.xcdatamodel; sourceTree = "<group>"; };
+		E538C63C195683BF0022693E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E538C63F195683BF0022693E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E538C641195683BF0022693E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E538C647195683BF0022693E /* GreenseerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenseerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E538C64C195683BF0022693E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E538C64D195683BF0022693E /* GreenseerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenseerTests.swift; sourceTree = "<group>"; };
+		E555372A1956ADCB00DACB7E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E558924F1956A50D0031E2BE /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E538C62F195683BF0022693E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E538C644195683BF0022693E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5017C681956C8C0001BBD39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E538C63C195683BF0022693E /* ViewController.swift */,
+				E555372A1956ADCB00DACB7E /* WebViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E5017C691956C8C6001BBD39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E558924F1956A50D0031E2BE /* Character.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E5017C6C1956C8ED001BBD39 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E5017C6D1956C911001BBD39 /* ImageHelper.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E538C629195683BF0022693E = {
+			isa = PBXGroup;
+			children = (
+				E538C634195683BF0022693E /* Greenseer */,
+				E538C64A195683BF0022693E /* GreenseerTests */,
+				E538C633195683BF0022693E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E538C633195683BF0022693E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E538C632195683BF0022693E /* Greenseer.app */,
+				E538C647195683BF0022693E /* GreenseerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E538C634195683BF0022693E /* Greenseer */ = {
+			isa = PBXGroup;
+			children = (
+				E538C637195683BF0022693E /* AppDelegate.swift */,
+				E5017C681956C8C0001BBD39 /* Controllers */,
+				E5017C691956C8C6001BBD39 /* Models */,
+				E5017C6C1956C8ED001BBD39 /* Utils */,
+				E538C63E195683BF0022693E /* Main.storyboard */,
+				E538C641195683BF0022693E /* Images.xcassets */,
+				E538C639195683BF0022693E /* Greenseer.xcdatamodeld */,
+				E538C635195683BF0022693E /* Supporting Files */,
+			);
+			path = Greenseer;
+			sourceTree = "<group>";
+		};
+		E538C635195683BF0022693E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E538C636195683BF0022693E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E538C64A195683BF0022693E /* GreenseerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E538C64D195683BF0022693E /* GreenseerTests.swift */,
+				E538C64B195683BF0022693E /* Supporting Files */,
+			);
+			path = GreenseerTests;
+			sourceTree = "<group>";
+		};
+		E538C64B195683BF0022693E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E538C64C195683BF0022693E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E538C631195683BF0022693E /* Greenseer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E538C651195683C00022693E /* Build configuration list for PBXNativeTarget "Greenseer" */;
+			buildPhases = (
+				E538C62E195683BF0022693E /* Sources */,
+				E538C62F195683BF0022693E /* Frameworks */,
+				E538C630195683BF0022693E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Greenseer;
+			productName = Greenseer;
+			productReference = E538C632195683BF0022693E /* Greenseer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E538C646195683BF0022693E /* GreenseerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E538C654195683C00022693E /* Build configuration list for PBXNativeTarget "GreenseerTests" */;
+			buildPhases = (
+				E538C643195683BF0022693E /* Sources */,
+				E538C644195683BF0022693E /* Frameworks */,
+				E538C645195683BF0022693E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E538C649195683BF0022693E /* PBXTargetDependency */,
+			);
+			name = GreenseerTests;
+			productName = GreenseerTests;
+			productReference = E538C647195683BF0022693E /* GreenseerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E538C62A195683BF0022693E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Eli Dela Cruz";
+				TargetAttributes = {
+					E538C631195683BF0022693E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					E538C646195683BF0022693E = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = E538C631195683BF0022693E;
+					};
+				};
+			};
+			buildConfigurationList = E538C62D195683BF0022693E /* Build configuration list for PBXProject "Greenseer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E538C629195683BF0022693E;
+			productRefGroup = E538C633195683BF0022693E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E538C631195683BF0022693E /* Greenseer */,
+				E538C646195683BF0022693E /* GreenseerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E538C630195683BF0022693E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E538C640195683BF0022693E /* Main.storyboard in Resources */,
+				E538C642195683BF0022693E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E538C645195683BF0022693E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E538C62E195683BF0022693E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E538C63D195683BF0022693E /* ViewController.swift in Sources */,
+				E538C63B195683BF0022693E /* Greenseer.xcdatamodeld in Sources */,
+				E538C638195683BF0022693E /* AppDelegate.swift in Sources */,
+				E555372B1956ADCB00DACB7E /* WebViewController.swift in Sources */,
+				E55892501956A50D0031E2BE /* Character.swift in Sources */,
+				E5017C6E1956C911001BBD39 /* ImageHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E538C643195683BF0022693E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E538C64E195683BF0022693E /* GreenseerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E538C649195683BF0022693E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E538C631195683BF0022693E /* Greenseer */;
+			targetProxy = E538C648195683BF0022693E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E538C63E195683BF0022693E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E538C63F195683BF0022693E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E538C64F195683C00022693E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E538C650195683C00022693E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E538C652195683C00022693E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Greenseer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E538C653195683C00022693E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Greenseer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E538C655195683C00022693E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Greenseer.app/Greenseer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GreenseerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		E538C656195683C00022693E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Greenseer.app/Greenseer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GreenseerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E538C62D195683BF0022693E /* Build configuration list for PBXProject "Greenseer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E538C64F195683C00022693E /* Debug */,
+				E538C650195683C00022693E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E538C651195683C00022693E /* Build configuration list for PBXNativeTarget "Greenseer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E538C652195683C00022693E /* Debug */,
+				E538C653195683C00022693E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E538C654195683C00022693E /* Build configuration list for PBXNativeTarget "GreenseerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E538C655195683C00022693E /* Debug */,
+				E538C656195683C00022693E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E538C639195683BF0022693E /* Greenseer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E538C63A195683BF0022693E /* Greenseer.xcdatamodel */,
+			);
+			currentVersion = E538C63A195683BF0022693E /* Greenseer.xcdatamodel */;
+			path = Greenseer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E538C62A195683BF0022693E /* Project object */;
+}
